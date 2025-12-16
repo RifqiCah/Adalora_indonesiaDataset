@@ -1,0 +1,80 @@
+{
+  "builder_name": "indonlu",
+  "citation": "@inproceedings{saputri2018emotion,\n  title={Emotion Classification on Indonesian Twitter Dataset},\n  author={Mei Silviana Saputri, Rahmad Mahendra, and Mirna Adriani},\n  booktitle={Proceedings of the 2018 International Conference on Asian Language Processing(IALP)},\n  pages={90--95},\n  year={2018},\n  organization={IEEE}\n}\n@inproceedings{wilie2020indonlu,\ntitle = {{IndoNLU}: Benchmark and Resources for Evaluating Indonesian Natural Language Understanding},\nauthors={Bryan Wilie and Karissa Vincentio and Genta Indra Winata and Samuel Cahyawijaya and X. Li and Zhi Yuan Lim and S. Soleman and R. Mahendra and Pascale Fung and Syafri Bahar and A. Purwarianti},\nbooktitle={Proceedings of the 1st Conference of the Asia-Pacific Chapter of the Association for Computational Linguistics and the 10th International Joint Conference on Natural Language Processing},\nyear={2020}\n}\n",
+  "config_name": "emot",
+  "dataset_name": "indonlu",
+  "dataset_size": 855344,
+  "description": "An emotion classification dataset collected from the social media\nplatform Twitter (Saputri et al., 2018). The dataset consists of\naround 4000 Indonesian colloquial language tweets, covering five\ndifferent emotion labels: sadness, anger, love, fear, and happy.",
+  "download_checksums": {
+    "https://raw.githubusercontent.com/IndoNLP/indonlu/master/dataset/emot_emotion-twitter/train_preprocess.csv": {
+      "num_bytes": 674924,
+      "checksum": null
+    },
+    "https://raw.githubusercontent.com/IndoNLP/indonlu/master/dataset/emot_emotion-twitter/valid_preprocess.csv": {
+      "num_bytes": 82619,
+      "checksum": null
+    },
+    "https://raw.githubusercontent.com/IndoNLP/indonlu/master/dataset/emot_emotion-twitter/test_preprocess.csv": {
+      "num_bytes": 83445,
+      "checksum": null
+    }
+  },
+  "download_size": 840988,
+  "features": {
+    "input_ids": {
+      "feature": {
+        "dtype": "int32",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    },
+    "token_type_ids": {
+      "feature": {
+        "dtype": "int8",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    },
+    "attention_mask": {
+      "feature": {
+        "dtype": "int8",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    },
+    "labels": {
+      "dtype": "int64",
+      "_type": "Value"
+    }
+  },
+  "homepage": "https://www.indobenchmark.com/",
+  "license": "",
+  "size_in_bytes": 1696332,
+  "splits": {
+    "train": {
+      "name": "train",
+      "num_bytes": 686414,
+      "num_examples": 3521,
+      "dataset_name": "indonlu"
+    },
+    "validation": {
+      "name": "validation",
+      "num_bytes": 84078,
+      "num_examples": 440,
+      "dataset_name": "indonlu"
+    },
+    "test": {
+      "name": "test",
+      "num_bytes": 84852,
+      "num_examples": 440,
+      "dataset_name": "indonlu"
+    }
+  },
+  "version": {
+    "version_str": "1.0.0",
+    "description": "",
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  }
+}

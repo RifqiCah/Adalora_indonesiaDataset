@@ -1,0 +1,55 @@
+{
+  "builder_name": "parquet",
+  "citation": "",
+  "config_name": "indonesian",
+  "dataset_name": "wiki_lingua",
+  "dataset_size": 136408773,
+  "description": "",
+  "download_checksums": {
+    "hf://datasets/wiki_lingua@ea3db3510cbd34d0f8dc612419ae40e4732f3b40/indonesian/train-00000-of-00001.parquet": {
+      "num_bytes": 67658970,
+      "checksum": null
+    }
+  },
+  "download_size": 67658970,
+  "features": {
+    "input_ids": {
+      "feature": {
+        "dtype": "int32",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    },
+    "attention_mask": {
+      "feature": {
+        "dtype": "int8",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    },
+    "labels": {
+      "feature": {
+        "dtype": "int64",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    }
+  },
+  "homepage": "",
+  "license": "",
+  "size_in_bytes": 204067743,
+  "splits": {
+    "train": {
+      "name": "train",
+      "num_bytes": 136408773,
+      "num_examples": 16308,
+      "dataset_name": "wiki_lingua"
+    }
+  },
+  "version": {
+    "version_str": "0.0.0",
+    "major": 0,
+    "minor": 0,
+    "patch": 0
+  }
+}

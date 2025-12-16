@@ -1,0 +1,83 @@
+{
+  "builder_name": "indonlu",
+  "citation": "@inproceedings{hoesen2018investigating,\n  title={Investigating Bi-LSTM and CRF with POS Tag Embedding for Indonesian Named Entity Tagger},\n  author={Devin Hoesen and Ayu Purwarianti},\n  booktitle={Proceedings of the 2018 International Conference on Asian Language Processing (IALP)},\n  pages={35--38},\n  year={2018},\n  organization={IEEE}\n}\n@inproceedings{wilie2020indonlu,\ntitle = {{IndoNLU}: Benchmark and Resources for Evaluating Indonesian Natural Language Understanding},\nauthors={Bryan Wilie and Karissa Vincentio and Genta Indra Winata and Samuel Cahyawijaya and X. Li and Zhi Yuan Lim and S. Soleman and R. Mahendra and Pascale Fung and Syafri Bahar and A. Purwarianti},\nbooktitle={Proceedings of the 1st Conference of the Asia-Pacific Chapter of the Association for Computational Linguistics and the 10th International Joint Conference on Natural Language Processing},\nyear={2020}\n}\n",
+  "config_name": "nerp",
+  "dataset_name": "indonlu",
+  "dataset_size": 3445956,
+  "description": "This NER dataset (Hoesen and Purwarianti, 2018) contains texts collected from several Indonesian news websites.\nThere are five labels available in this dataset, PER (name of person), LOC (name of location), IND (name of product or brand),\nEVT (name of the event), and FNB (name of food and beverage). The NERP dataset uses the IOB chunking format.",
+  "download_checksums": {
+    "https://raw.githubusercontent.com/IndoNLP/indonlu/master/dataset/nerp_ner-prosa/train_preprocess.txt": {
+      "num_bytes": 1387891,
+      "checksum": null
+    },
+    "https://raw.githubusercontent.com/IndoNLP/indonlu/master/dataset/nerp_ner-prosa/valid_preprocess.txt": {
+      "num_bytes": 172835,
+      "checksum": null
+    },
+    "https://raw.githubusercontent.com/IndoNLP/indonlu/master/dataset/nerp_ner-prosa/test_preprocess.txt": {
+      "num_bytes": 176892,
+      "checksum": null
+    }
+  },
+  "download_size": 1737618,
+  "features": {
+    "input_ids": {
+      "feature": {
+        "dtype": "int32",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    },
+    "token_type_ids": {
+      "feature": {
+        "dtype": "int8",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    },
+    "attention_mask": {
+      "feature": {
+        "dtype": "int8",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    },
+    "labels": {
+      "feature": {
+        "dtype": "int64",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    }
+  },
+  "homepage": "https://www.indobenchmark.com/",
+  "license": "",
+  "size_in_bytes": 5183574,
+  "splits": {
+    "train": {
+      "name": "train",
+      "num_bytes": 2751336,
+      "num_examples": 6720,
+      "dataset_name": "indonlu"
+    },
+    "validation": {
+      "name": "validation",
+      "num_bytes": 343912,
+      "num_examples": 840,
+      "dataset_name": "indonlu"
+    },
+    "test": {
+      "name": "test",
+      "num_bytes": 350708,
+      "num_examples": 840,
+      "dataset_name": "indonlu"
+    }
+  },
+  "version": {
+    "version_str": "1.0.0",
+    "description": "",
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  }
+}

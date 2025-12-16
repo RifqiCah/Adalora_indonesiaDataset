@@ -1,0 +1,80 @@
+{
+  "builder_name": "indonlu",
+  "citation": "@inproceedings{purwarianti2019improving,\n  title={Improving Bi-LSTM Performance for Indonesian Sentiment Analysis Using Paragraph Vector},\n  author={Ayu Purwarianti and Ida Ayu Putu Ari Crisdayanti},\n  booktitle={Proceedings of the 2019 International Conference of Advanced Informatics: Concepts, Theory and Applications (ICAICTA)},\n  pages={1--5},\n  year={2019},\n  organization={IEEE}\n}\n@inproceedings{wilie2020indonlu,\ntitle = {{IndoNLU}: Benchmark and Resources for Evaluating Indonesian Natural Language Understanding},\nauthors={Bryan Wilie and Karissa Vincentio and Genta Indra Winata and Samuel Cahyawijaya and X. Li and Zhi Yuan Lim and S. Soleman and R. Mahendra and Pascale Fung and Syafri Bahar and A. Purwarianti},\nbooktitle={Proceedings of the 1st Conference of the Asia-Pacific Chapter of the Association for Computational Linguistics and the 10th International Joint Conference on Natural Language Processing},\nyear={2020}\n}\n",
+  "config_name": "smsa",
+  "dataset_name": "indonlu",
+  "dataset_size": 2536528,
+  "description": "This sentence-level sentiment analysis dataset (Purwarianti and Crisdayanti, 2019)\nis a collection of comments and reviews in Indonesian obtained from multiple online\nplatforms. The text was crawled and then annotated by several Indonesian linguists\nto construct this dataset. There are three possible sentiments on the SmSA\ndataset: positive, negative, and neutral.",
+  "download_checksums": {
+    "https://raw.githubusercontent.com/IndoNLP/indonlu/master/dataset/smsa_doc-sentiment-prosa/train_preprocess.tsv": {
+      "num_bytes": 2186718,
+      "checksum": null
+    },
+    "https://raw.githubusercontent.com/IndoNLP/indonlu/master/dataset/smsa_doc-sentiment-prosa/valid_preprocess.tsv": {
+      "num_bytes": 246974,
+      "checksum": null
+    },
+    "https://raw.githubusercontent.com/IndoNLP/indonlu/master/dataset/smsa_doc-sentiment-prosa/test_preprocess.tsv": {
+      "num_bytes": 75949,
+      "checksum": null
+    }
+  },
+  "download_size": 2509641,
+  "features": {
+    "input_ids": {
+      "feature": {
+        "dtype": "int32",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    },
+    "token_type_ids": {
+      "feature": {
+        "dtype": "int8",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    },
+    "attention_mask": {
+      "feature": {
+        "dtype": "int8",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    },
+    "labels": {
+      "dtype": "int64",
+      "_type": "Value"
+    }
+  },
+  "homepage": "https://www.indobenchmark.com/",
+  "license": "",
+  "size_in_bytes": 5046169,
+  "splits": {
+    "train": {
+      "name": "train",
+      "num_bytes": 2209866,
+      "num_examples": 11000,
+      "dataset_name": "indonlu"
+    },
+    "validation": {
+      "name": "validation",
+      "num_bytes": 249625,
+      "num_examples": 1260,
+      "dataset_name": "indonlu"
+    },
+    "test": {
+      "name": "test",
+      "num_bytes": 77037,
+      "num_examples": 500,
+      "dataset_name": "indonlu"
+    }
+  },
+  "version": {
+    "version_str": "1.0.0",
+    "description": "",
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  }
+}
