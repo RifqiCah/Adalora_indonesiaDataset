@@ -1,0 +1,67 @@
+{
+  "best_global_step": 189,
+  "best_metric": 0.12281028699217295,
+  "best_model_checkpoint": "model_output/nerp_lora_baseline\\checkpoint-189",
+  "epoch": 1.0,
+  "eval_steps": 500,
+  "global_step": 189,
+  "is_hyper_param_search": false,
+  "is_local_process_zero": true,
+  "is_world_process_zero": true,
+  "log_history": [
+    {
+      "epoch": 0.26455026455026454,
+      "grad_norm": 0.31582286953926086,
+      "learning_rate": 0.0009740740740740741,
+      "loss": 0.9924,
+      "step": 50
+    },
+    {
+      "epoch": 0.5291005291005291,
+      "grad_norm": 0.4506250023841858,
+      "learning_rate": 0.0009476190476190476,
+      "loss": 0.6408,
+      "step": 100
+    },
+    {
+      "epoch": 0.7936507936507936,
+      "grad_norm": 0.2159358561038971,
+      "learning_rate": 0.0009211640211640212,
+      "loss": 0.6134,
+      "step": 150
+    },
+    {
+      "epoch": 1.0,
+      "eval_accuracy": 0.857064574741153,
+      "eval_f1": 0.12281028699217295,
+      "eval_loss": 0.5710868239402771,
+      "eval_precision": 0.29886621315192746,
+      "eval_recall": 0.07728392166060748,
+      "eval_runtime": 5.133,
+      "eval_samples_per_second": 294.562,
+      "eval_steps_per_second": 9.351,
+      "step": 189
+    }
+  ],
+  "logging_steps": 50,
+  "max_steps": 1890,
+  "num_input_tokens_seen": 0,
+  "num_train_epochs": 10,
+  "save_steps": 500,
+  "stateful_callbacks": {
+    "TrainerControl": {
+      "args": {
+        "should_epoch_stop": false,
+        "should_evaluate": false,
+        "should_log": false,
+        "should_save": true,
+        "should_training_stop": false
+      },
+      "attributes": {}
+    }
+  },
+  "total_flos": 1894314885120.0,
+  "train_batch_size": 32,
+  "trial_name": null,
+  "trial_params": null
+}
